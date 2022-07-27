@@ -15,10 +15,13 @@ h1,h2{
     padding: 10px;
 }
 .flip-card{
+    height: 100%;
     background-color: transparent;
     perspective: 1000px;
+    border-radius: 25px;
 }
 .flip-card-inner{
+    height: 100%;
     position: relative;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -33,6 +36,7 @@ h1,h2{
     backface-visibility: hidden;
 }
 .flip-card-front{
+    height: 100%;
     background-color:coral;
     color:blueviolet
 }
@@ -41,3 +45,15 @@ h1,h2{
     color: white;
     transform: rotateY(180deg)
 }
+aside{
+    width: 75%;
+    float: right;
+    clear: right;
+}
+img{
+    height: 100%;
+    float: left;
+    size: cover;
+    border-radius: 25px;
+}
+
