@@ -38,7 +38,7 @@ h1,h2{
 .flip-card-front{
     height: 100%;
     background-color:coral;
-    color:blueviolet
+    color:blueviolet;
 }
 .flip-card-back{
     background-color: darkred;
