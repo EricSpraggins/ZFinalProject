@@ -2,7 +2,7 @@
     box-sizing:border-box;
 }
 .border{
-    border:1px solid skyblue;
+    border:1px solid crimson;
 }
 h1,h2{
     text-align:center;
@@ -37,13 +37,40 @@ h1,h2{
 }
 .flip-card-front{
     height: 100%;
-    background-color:coral;
+    width: 100%;
+    background-color: coral;
     color:blueviolet;
+    backface-visibility: visible;
 }
 .flip-card-back{
-    background-color: darkred;
-    color: white;
-    transform: rotateY(180deg)
+    background-color: goldenrod;
+    color: purple;
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.flip-card-back div{
+    border: 1px solid crimson;
+}
+.flip-card-back .top-back{
+    flex: 0 30%;
+    display: flex;
+}
+.flip-card-back .top-back .top-back-img{
+    flex: 0 30%;
+}
+.flip-card-back .top-back .top-back-aside{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.flip-card-back .top-back .top-back-aside div{
+    flex: 1;
+}
+.flip-card-back .bottom-back{
+    flex: 1;
 }
 aside{
     width: 75%;
