@@ -61,6 +61,10 @@ h1,h2{
 .flip-card-back .top-back .top-back-img{
     flex: 0 30%;
 }
+.flip-card-back .top-back .top-back-img-notLuffy{
+    flex: 0 30%;
+    height: 150px;
+}
 .flip-card-back .top-back .top-back-aside{
     flex: 1;
     display: flex;
