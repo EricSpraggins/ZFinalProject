@@ -2,7 +2,8 @@
     box-sizing:border-box;
 }
 .border{
-    border:1px solid crimson;
+    border:1px solid green;
+    border-radius: 25px;
 }
 h1,h2{
     text-align:center;
@@ -38,21 +39,22 @@ h1,h2{
 .flip-card-front{
     height: 100%;
     width: 100%;
-    background-color: coral;
     color:blueviolet;
     backface-visibility: visible;
 }
 .flip-card-back{
-    background-color: goldenrod;
-    color: purple;
+    background-color: purple;
+    color: crimson;
     transform: rotateY(180deg);
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
 }
 .flip-card-back div{
-    border: 1px solid crimson;
+    border: 1px solid green;
+    border-radius: 25px;
 }
 .flip-card-back .top-back{
     flex: 0 30%;
@@ -72,9 +74,14 @@ h1,h2{
 }
 .flip-card-back .top-back .top-back-aside div{
     flex: 1;
+    text-align: center;
+    background-color: lightseagreen;
 }
 .flip-card-back .bottom-back{
     flex: 1;
+}
+.flip-card-back .bottom-back .bottom-back-section{
+    background-color: lightseagreen;
 }
 aside{
     width: 75%;
@@ -83,7 +90,18 @@ aside{
 }
 img{
     height: 100%;
-    float: left;
     size: cover;
     border-radius: 25px;
+}
+ul{
+    list-style-type: circle;
+}
+section{
+    padding: 10px;
+}
+body{
+    background-color: goldenrod;
+}
+body > header > h2{
+    background-color: crimson;
 }
