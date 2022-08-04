@@ -105,3 +105,6 @@ body{
 body > header > h2{
     background-color: crimson;
 }
+h3{
+    text-align: center;
+}
